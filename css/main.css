@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background: #F2F6F7;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h3 {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222A46;
+}
+
+.footer ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #353949;
+}
+
+.footer-first-lists li {
+    padding-bottom: 5px;
+}
+
+.footer-second-lists li {
+    padding-bottom: 5px;
+}
+
+.footer-third-lists li {
+    padding-bottom: 5px;
+}
+
+.footer-four-lists li {
+    padding-bottom: 5px;
+}
+
+.footer-four-lists li:nth-child(3) {
+    padding-bottom: 30px;
+}
+
+.footer-four-lists-2 li:nth-child(2) {
+    padding-bottom: 30px;
+}
+
+.footer-five-lists li {
+    padding-bottom: 5px;
+}
+
+.footer-six-lists h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222A46;
+    padding-bottom: 15px;
+}
+
+.nomer-4 li {
+    padding-bottom: 5px;
+}
+
+.footer-line {
+    margin-top: 29px;
+    margin-bottom: 24px;
+    border-top: 1px solid #E2E4EB;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom-right-title {
+    padding-right: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-first, .footer-second, .footer-third {
+        padding-bottom: 30px;
+    }
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-bottom-right {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer-bottom-middle {
+        padding-top: 30px;
+    }
+}
